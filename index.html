@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Arshad Ansari | Frontend Developer & Aspiring Java Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Md Arshad Ansari — a frontend developer skilled in HTML5, CSS3, transitioning into Java Full Stack Development." />
+
+  <!-- Prevent FOUC for dark mode -->
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#hero" class="logo"><a href=""></a></a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Theme Toggle + Hamburger -->
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <span class="icon-sun">&#9788;</span>
+          <span class="icon-moon">&#9790;</span>
+        </button>
+        <button id="menu-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <!-- Animated gradient background -->
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-blob blob-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Greeting badge -->
+      <div class="hero-badge animate-fade-in-up">
+        <span class="badge-dot"></span>
+        Welcome to my portfolio
+      </div>
+
+      <!-- Name -->
+      <h1 class="animate-fade-in-up delay-1">
+        Hi, I'm <span class="gradient-text">Md Arshad Ansari</span>
+      </h1>
+
+      <!-- Title -->
+      <p class="hero-title animate-fade-in-up delay-2">
+        Frontend Developer | Aspiring Java Full Stack Developer
+      </p>
+
+      <!-- Intro -->
+      <p class="hero-intro animate-fade-in-up delay-3">
+        I craft clean, responsive user interfaces with a strong foundation in
+        HTML &amp; CSS. Currently on an exciting journey to master Java Full
+        Stack Development and build end-to-end web applications.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-buttons animate-fade-in-up delay-4">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Download Resume</a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator animate-fade-in delay-6">
+        <a href="#about">
+          <span>Scroll Down</span>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <!-- Section heading -->
+      <div class="section-header reveal">
+        <span class="section-tag">Get to know me</span>
+        <h2>About <span class="gradient-text">Me</span></h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Illustration -->
+        <div class="about-illustration reveal">
+          <div class="illustration-circle outer"></div>
+          <div class="illustration-circle middle"></div>
+          <div class="illustration-inner">
+            <div class="illustration-icon">&#128187;</div>
+            <p>Frontend &bull; Java &bull; Full Stack</p>
+          </div>
+        </div>
+
+        <!-- Bio -->
+        <div class="about-text reveal">
+          <h3>A passionate developer with a love for clean code</h3>
+          <p>
+            I'm Md Arshad Ansari, a frontend developer with a strong command of
+            HTML5 and CSS3 — including modern layout techniques like Flexbox,
+            CSS Grid, and smooth animations. I believe that great user
+            experiences start with well-structured, semantic markup and
+            pixel-perfect styling.
+          </p>
+          <p>
+            Right now I'm actively expanding my skill set into backend
+            development. I'm diving deep into <strong>Java</strong> (mastering
+            OOP concepts), learning <strong>Spring Boot</strong> for building
+            robust REST APIs, and exploring how frontend and backend come
+            together to create complete, production-ready applications. My
+            goal is to become a well-rounded Java Full Stack Developer.
+          </p>
+
+          <!-- Quick stats -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Frontend Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">2+</div>
+              <div class="stat-label">Months Learning Java</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Passion to Grow</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I work with</span>
+        <h2>My <span class="gradient-text">Skills</span></h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Core Skills -->
+        <div class="skill-card glass-card reveal" data-delay="0">
+          <div class="skill-badge bg-gradient-1">&#9889; Core Skills</div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML5</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>CSS3 (Flexbox, Grid, Animations)</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Currently Learning -->
+        <div class="skill-card glass-card reveal" data-delay="100">
+          <div class="skill-badge bg-gradient-2">&#128218; Currently Learning</div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Java (OOP Concepts)</span><span class="skill-pct">55%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Spring Boot (Beginner)</span><span class="skill-pct">30%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="30"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>REST APIs</span><span class="skill-pct">40%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Basic Knowledge -->
+        <div class="skill-card glass-card reveal" data-delay="200">
+          <div class="skill-badge bg-gradient-3">&#129513; Basic Knowledge</div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript (DOM Basics)</span><span class="skill-pct">50%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>React.js (Basic Components)</span><span class="skill-pct">35%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="35"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>SQL (Basic Queries)</span><span class="skill-pct">40%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>PHP (Basic Understanding)</span><span class="skill-pct">25%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="25"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card glass-card reveal" data-delay="300">
+          <div class="skill-badge bg-gradient-4">&#128295; Tools</div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Git &amp; GitHub</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>VS Code</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My recent work</span>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal" data-delay="0">
+          <div class="project-image">&#127912;</div>
+          <div class="project-body">
+            <h3>Responsive Landing Page</h3>
+            <p>A modern, fully responsive landing page built with HTML5 and CSS3 featuring smooth animations, gradient backgrounds, and a clean mobile-first layout.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>Responsive Design</span>
+            </div>
+            <a href="#" class="project-link">
+              View Project
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal" data-delay="100">
+          <div class="project-image">&#127760;</div>
+          <div class="project-body">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website with dark/light mode, scroll-reveal animations, skill progress bars, and a modern glassmorphism design system.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <a href="#" class="project-link">
+              View Project
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card reveal" data-delay="200">
+          <div class="project-image">&#9925;&#65039;</div>
+          <div class="project-body">
+            <h3>Weather Dashboard UI</h3>
+            <p>A weather dashboard interface with clean card layouts, gradient headers, and responsive grid — designed to display real-time weather data beautifully.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>CSS Grid</span><span>Flexbox</span>
+            </div>
+            <a href="#" class="project-link">
+              View Project
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass-card reveal" data-delay="300">
+          <div class="project-image">&#9989;</div>
+          <div class="project-body">
+            <h3>To-Do List App</h3>
+            <p>A simple interactive to-do list application using JavaScript for DOM manipulation, with add, delete, and mark-as-complete functionality.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <a href="#" class="project-link">
+              View Project
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════════════════════
+       LEARNING JOURNEY SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="journey" class="section section-alt">
+    <div class="container narrow">
+      <div class="section-header reveal">
+        <span class="section-tag">Where I'm headed</span>
+        <h2>Learning <span class="gradient-text">Journey</span></h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="timeline">
+        <!-- Phase 1 -->
+        <div class="timeline-item reveal" data-delay="0">
+          <div class="timeline-dot">&#9989;</div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-badge">Phase 1 — Completed</span>
+            <h3>Frontend Foundations</h3>
+            <p>Built a strong foundation in HTML5 and CSS3, mastering semantic markup, Flexbox, CSS Grid, animations, and responsive design principles through hands-on projects.</p>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="timeline-item reveal" data-delay="100">
+          <div class="timeline-dot">&#128260;</div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-badge">Phase 2 — In Progress</span>
+            <h3>JavaScript &amp; DOM Manipulation</h3>
+            <p>Learning core JavaScript concepts including DOM manipulation, event handling, and basic interactivity to make web pages dynamic and user-friendly.</p>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="timeline-item reveal" data-delay="200">
+          <div class="timeline-dot">&#9749;</div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-badge">Phase 3 — Current Focus</span>
+            <h3>Java &amp; OOP Mastery</h3>
+            <p>Deep-diving into Java programming with a focus on Object-Oriented Programming concepts — classes, inheritance, polymorphism, interfaces, and design patterns.</p>
+          </div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="timeline-item reveal" data-delay="300">
+          <div class="timeline-dot">&#127793;</div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-badge">Phase 4 — Next Step</span>
+            <h3>Spring Boot &amp; REST APIs</h3>
+            <p>Learning the Spring Boot framework to build RESTful APIs, understand MVC architecture, handle database connectivity with JPA/Hibernate, and create backend services.</p>
+          </div>
+        </div>
+
+        <!-- Phase 5 -->
+        <div class="timeline-item reveal" data-delay="400">
+          <div class="timeline-dot">&#128640;</div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-badge">Phase 5 — The Goal</span>
+            <h3>Full Stack Integration</h3>
+            <p>Combining frontend and backend skills to build complete, production-ready web applications. Deploying projects and contributing to open source.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="contact" class="section">
+    <div class="container medium">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's connect</span>
+        <h2>Get in <span class="gradient-text">Touch</span></h2>
+        <div class="heading-line"></div>
+        <p class="section-subtitle">I'm always open to new opportunities, collaborations, or just a friendly conversation about tech. Feel free to reach out!</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <a href="mailto:mdarshadansari802@gmail.com" class="contact-card glass-card">
+            <div class="contact-icon">&#128231;</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">mdarshadansari802@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/md-arshad-ansari-108658268" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+            <div class="contact-icon">&#128188;</div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/md-arshad-ansari</div>
+            </div>
+          </a>
+          <a href="https://github.com/Arshad326" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+            <div class="contact-icon">&#128049;</div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/md-arshad-ansari</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Contact Form (UI only) -->
+        <form id="contact-form" class="contact-form reveal" onsubmit="return false;">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="name@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Hello Arshad, I'd love to connect..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 <strong>Md Arshad Ansari</strong>. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</body>
+</html>
